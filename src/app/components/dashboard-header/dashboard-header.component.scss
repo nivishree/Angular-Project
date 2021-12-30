@@ -1,0 +1,59 @@
+$primary_background_color:rgb(49, 49, 49);
+$primary-text-color: white;
+$primary-button-color: white;
+@mixin primaryDesing(){
+    background-color: $primary_background_color;
+    color: $primary-text-color;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 60px;
+    border-radius: 0%;
+    padding-bottom: 0;
+    .name{
+        font-size: 1.6em;
+        padding-top: 20px;
+    }
+}
+.navbar{
+    margin-bottom: 0%;
+    @include primaryDesing();
+
+}
+
+.navbar-nav1{
+    flex-direction: row;
+    float: right;
+    a{
+        font-size: medium;
+    }
+}
+
+.btn{
+    margin-top: -30%;
+    color: $primary-text-color;
+}
+
+.btn:hover{
+    color: $primary-button-color;
+    border-bottom:  solid $primary-text-color;    
+}
+
+
+
+@media only screen and (max-width:120px){
+    .navbar .container-fluid{
+       flex-direction: row;
+    }
+}
+@media screen and (max-width:700px){
+    .container-fluid div a{
+        float: none;
+        width: 100%;
+    }
+    .nav{
+        float: left;
+        a{
+            padding-top: 7em;
+        }
+    }
+}

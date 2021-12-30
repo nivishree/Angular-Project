@@ -1,0 +1,20 @@
+
+$primary-text-color: white;
+$primary-button-color: rgb(92, 91, 91);
+.dialog{
+button{
+    color:$primary-text-color;
+    background-color: $primary-button-color;
+    width: 10em;
+    height: 3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    float: right;
+    border-radius: 0.2em;
+    border-color:rgb(128, 127, 127);
+    &:hover{
+        background-color: rgb(114, 111, 111);
+    }
+}
+}

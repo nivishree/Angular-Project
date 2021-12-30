@@ -1,0 +1,38 @@
+$primary_background_color:rgb(68, 67, 67);
+$primary-text-color: white;
+$primary-button-color: rgb(92, 91, 91);
+@mixin primaryDesing(){
+    background-color: $primary_background_color;
+    color: $primary-text-color;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 60px;
+    border-radius: 0%;
+
+}
+.navbar{
+    @include primaryDesing();
+    margin-bottom: 0%;
+    float:left;
+    border-color: rgb(83, 83, 83);
+    button{
+        color:$primary-text-color;
+        background-color: $primary-button-color;
+        width: 10em;
+        height: 3em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: 1em;
+        float: right;
+        border-radius: 0.2em;
+        border-color:rgb(128, 127, 127);
+        &:hover{
+            background-color: rgb(114, 111, 111);
+        }
+    }
+    
+}
+
+@media screen and (max-width:900px){
+
+}

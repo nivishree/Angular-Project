@@ -1,0 +1,46 @@
+$primary_background_color:rgb(82, 80, 80);
+table {
+    // margin-top: -20% !important;
+    background-color: $primary_background_color;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+    font-size: 1.1em;
+    border-spacing: 0;
+    margin-top: -9%;
+    color: white;
+    width: 100%;
+    border: 1px solid rgb(87, 86, 86);
+    .Patient{
+        border: 1px solid rgb(87, 86, 86);
+        height: 70px;
+        &:hover{
+            cursor: pointer;
+            background-color: rgb(71, 71, 71);
+        }
+    }
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+ th{
+     font-size: large;
+     height: 80px;
+    //  font-weight: bolder;
+    
+ }
+// tr:nth-child(even){background-color: rgb(78, 78, 78)}
+.patient-table{
+    margin-top: -22%;
+}
+@media screen and (max-width:900px){
+    table{
+        flex-direction: row;
+    }
+tr{
+    flex-direction: row;
+    float: none;
+    width: 100%;
+}
+}
