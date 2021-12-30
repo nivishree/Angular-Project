@@ -1,6 +1,7 @@
 # PatientDashboard
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
+Designed a patient dashboard using Angular in addition to RxJS and redux for hospitals.
 
 ## Development server
 
